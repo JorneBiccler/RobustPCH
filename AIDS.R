@@ -53,7 +53,7 @@ invisible(capture.output(BrierSolution <- cvBrier(timeVar = data$time,
                                                   nCores = 10,
                                                   cvCriterion = "brier",
                                                   repeatedCV = 10,
-                                                  trim = 0.80)))
+                                                  trim = 1)))
 
 saveRDS(BrierSolution, "./Applications/BrierSolutiontimeAids.rds")
 saveRDS(MLEsolution, "./Applications/MLESolutiontimeAids.rds")
